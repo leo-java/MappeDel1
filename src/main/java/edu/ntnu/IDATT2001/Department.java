@@ -4,6 +4,7 @@ import edu.ntnu.IDATT2001.personer.Patient;
 import edu.ntnu.IDATT2001.personer.Person;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Department {
@@ -11,6 +12,10 @@ public class Department {
     private String departmentName;
     ArrayList<Employee> employees;
     ArrayList<Patient> patients;
+
+    //HashMap<String,ArrayList<Person>> subclasses = new HashMap<String,ArrayList<Person>>();
+    //For some reason hashmaps won't work, I would have used hashmaps to make my code more dynamic
+    //I could put every direct subclass in a hashmap which would allow me to recycle code the remove code for every subclass
 
     public Department(String departmentName){
         this.departmentName = departmentName;
@@ -40,8 +45,18 @@ public class Department {
         patients.add(patient);
     }
 
-    public void remove(Person person){
-
+    //This part of the code could be recycled if hashmaps worked with ArrayList<Person> which it doesn't for whatever reason
+    public void remove(Person person) throws RemoveException{
+        if(employees.contains(person)){
+            employees.remove(person);
+        }else{
+            throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+        }
+        if(patients.contains(person)){
+            patients.remove(person);
+        }else{
+            throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+        }
     }
 
     @Override
