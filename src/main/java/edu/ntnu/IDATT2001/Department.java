@@ -41,21 +41,29 @@ public class Department {
         employees.add(employee);
     }
 
-    public void addPatients(Patient patient){
+    public void addPatient(Patient patient){
         patients.add(patient);
     }
 
     //This part of the code could be recycled if hashmaps worked with ArrayList<Person> which it doesn't for whatever reason
     public void remove(Person person) throws RemoveException{
-        if(employees.contains(person)){
-            employees.remove(person);
-        }else{
-            throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+        if(person instanceof Employee) {
+            for (Employee employee : employees) {
+                if (person.equals(employee)) {
+                    employees.remove(person);
+                } else {
+                    throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+                }
+            }
         }
-        if(patients.contains(person)){
-            patients.remove(person);
-        }else{
-            throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+        if(person instanceof Patient) {
+            for (Patient patient : patients) {
+                if (person.equals(patient)) {
+                    patients.remove(person);
+                } else {
+                    throw new RemoveException(person.getFirstName() + " " + person.getLastName());
+                }
+            }
         }
     }
 
