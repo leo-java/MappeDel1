@@ -1,4 +1,4 @@
-package edu.ntnu.IDATT2001.personer;
+package edu.ntnu.IDATT2001;
 
 abstract public class Person {
     private String firstName;

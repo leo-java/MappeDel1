@@ -1,6 +1,8 @@
-package edu.ntnu.IDATT2001.personer;
+package edu.ntnu.IDATT2001;
 
-public class Nurse extends Employee{
+import edu.ntnu.IDATT2001.Employee;
+
+public class Nurse extends Employee {
     public Nurse(String firstName, String lastName, String personNumber) {
         super(firstName, lastName, personNumber);
     }

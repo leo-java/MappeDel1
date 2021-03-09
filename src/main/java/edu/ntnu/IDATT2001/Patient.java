@@ -1,6 +1,6 @@
-package edu.ntnu.IDATT2001.personer;
+package edu.ntnu.IDATT2001;
 
-public class Patient extends Person{
+public class Patient extends Person {
 
     private String diagnosis = "";
 

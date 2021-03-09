@@ -10,7 +10,7 @@ public class Hospital {
     /**
      * The Departments.
      */
-    ArrayList<Department> departments;
+    ArrayList<Department> departments = new ArrayList<Department>();
 
     /**
      * Instantiates a new Hospital.

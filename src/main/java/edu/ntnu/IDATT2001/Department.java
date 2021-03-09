@@ -1,17 +1,13 @@
 package edu.ntnu.IDATT2001;
-import edu.ntnu.IDATT2001.personer.Employee;
-import edu.ntnu.IDATT2001.personer.Patient;
-import edu.ntnu.IDATT2001.personer.Person;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Objects;
 
 public class Department {
 
     private String departmentName;
-    ArrayList<Employee> employees;
-    ArrayList<Patient> patients;
+    ArrayList<Employee> employees = new ArrayList<Employee>();
+    ArrayList<Patient> patients = new ArrayList<Patient>();
 
     //HashMap<String,ArrayList<Person>> subclasses = new HashMap<String,ArrayList<Person>>();
     //For some reason hashmaps won't work, I would have used hashmaps to make my code more dynamic
@@ -47,23 +43,12 @@ public class Department {
 
     //This part of the code could be recycled if hashmaps worked with ArrayList<Person> which it doesn't for whatever reason
     public void remove(Person person) throws RemoveException{
-        if(person instanceof Employee) {
-            for (Employee employee : employees) {
-                if (person.equals(employee)) {
-                    employees.remove(person);
-                } else {
-                    throw new RemoveException(person.getFirstName() + " " + person.getLastName());
-                }
-            }
-        }
-        if(person instanceof Patient) {
-            for (Patient patient : patients) {
-                if (person.equals(patient)) {
-                    patients.remove(person);
-                } else {
-                    throw new RemoveException(person.getFirstName() + " " + person.getLastName());
-                }
-            }
+        if(employees.contains(person)){
+            employees.remove(person);
+        }else if(patients.contains(person)){
+            patients.remove(person);
+        }else{
+            throw new RemoveException(person.getFirstName()+" "+person.getLastName());
         }
     }
 

@@ -1,6 +1,8 @@
-package edu.ntnu.IDATT2001.personer;
+package edu.ntnu.IDATT2001.doctor;
 
-public class Surgeon extends Doctor{
+import edu.ntnu.IDATT2001.Patient;
+
+public class Surgeon extends Doctor {
 
     public Surgeon(String firstName, String lastName, String personNumber) {
         super(firstName, lastName, personNumber);
