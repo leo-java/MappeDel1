@@ -1,4 +1,4 @@
-package edu.ntnu.IDATT2001;
+package mappe.del1.hospital;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

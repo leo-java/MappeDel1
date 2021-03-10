@@ -1,4 +1,4 @@
-package edu.ntnu.IDATT2001;
+package mappe.del1.hospital;
 
 public class HospitalClient {
     public static void main(String[] args) throws RemoveException {

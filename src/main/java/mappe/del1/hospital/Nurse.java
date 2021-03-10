@@ -1,6 +1,4 @@
-package edu.ntnu.IDATT2001;
-
-import edu.ntnu.IDATT2001.Employee;
+package mappe.del1.hospital;
 
 /**
  * The type Nurse.

@@ -1,4 +1,4 @@
-package edu.ntnu.IDATT2001;
+package mappe.del1.hospital;
 
 /**
  * The type Patient.

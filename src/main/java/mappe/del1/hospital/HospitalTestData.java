@@ -1,6 +1,8 @@
-package edu.ntnu.IDATT2001;
+package mappe.del1.hospital;
 
-import edu.ntnu.IDATT2001.doctor.*;
+import mappe.del1.hospital.doctor.*;
+import mappe.del1.hospital.doctor.GeneralPractitioner;
+import mappe.del1.hospital.doctor.Surgeon;
 
 /**
  * The type Hospital test data.
