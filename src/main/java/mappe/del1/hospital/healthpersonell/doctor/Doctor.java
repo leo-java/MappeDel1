@@ -1,4 +1,4 @@
-package mappe.del1.hospital.doctor;
+package mappe.del1.hospital.healthpersonell.doctor;
 
 import mappe.del1.hospital.Employee;
 import mappe.del1.hospital.Patient;

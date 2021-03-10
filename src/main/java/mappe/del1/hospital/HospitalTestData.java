@@ -1,8 +1,8 @@
 package mappe.del1.hospital;
 
 import mappe.del1.hospital.healthpersonell.Nurse;
-import mappe.del1.hospital.doctor.GeneralPractitioner;
-import mappe.del1.hospital.doctor.Surgeon;
+import mappe.del1.hospital.healthpersonell.doctor.GeneralPractitioner;
+import mappe.del1.hospital.healthpersonell.doctor.Surgeon;
 
 /**
  * The type Hospital test data.
