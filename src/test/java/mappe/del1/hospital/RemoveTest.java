@@ -1,4 +1,5 @@
 package mappe.del1.hospital;
+import mappe.del1.hospital.exception.RemoveException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

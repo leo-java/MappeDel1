@@ -1,5 +1,7 @@
 package mappe.del1.hospital;
 
+import mappe.del1.hospital.exception.RemoveException;
+
 import java.util.ArrayList;
 import java.util.Objects;
 

@@ -1,4 +1,6 @@
-package mappe.del1.hospital;
+package mappe.del1.hospital.healthpersonell;
+
+import mappe.del1.hospital.Employee;
 
 /**
  * The type Nurse.

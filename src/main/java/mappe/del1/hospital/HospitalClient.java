@@ -1,5 +1,7 @@
 package mappe.del1.hospital;
 
+import mappe.del1.hospital.exception.RemoveException;
+
 public class HospitalClient {
     public static void main(String[] args) throws RemoveException {
         Hospital hospital = new Hospital("hospitalMcHospitalFace");

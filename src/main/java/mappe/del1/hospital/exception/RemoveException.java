@@ -1,4 +1,4 @@
-package mappe.del1.hospital;
+package mappe.del1.hospital.exception;
 
 /**
  * The type Remove exception.
