@@ -12,7 +12,7 @@ public class HospitalClient {
         try{
             hospital.getDepartments().get(0).remove(patient2);
         }catch(RemoveException e){
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
         System.out.println(hospital.getDepartments().get(0).patients.toString());
         hospital.getDepartments().get(0).addPatient(patient);
@@ -20,7 +20,7 @@ public class HospitalClient {
         try{
             hospital.getDepartments().get(0).remove(patient2);
         }catch(RemoveException e){
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
         System.out.println(hospital.getDepartments().get(0).patients.toString());
     }
