@@ -2,6 +2,9 @@ package edu.ntnu.IDATT2001;
 
 import edu.ntnu.IDATT2001.doctor.*;
 
+/**
+ * The type Hospital test data.
+ */
 public final class HospitalTestData {
     private HospitalTestData() {
         // not called
